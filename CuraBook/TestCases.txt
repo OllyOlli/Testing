@@ -1,0 +1,34 @@
+Login Test Cases:
+
+Test Case 1: Login with valid credentials.
+Expected Result: User is redirected to the appointment page.
+
+Test Case 2: Login with an invalid username.
+Expected Result: User remains on the login page with an error message.
+
+Test Case 3: Login with an invalid password.
+Expected Result: User remains on the login page with an error message.
+
+Test Case 4: Login with empty fields.
+Expected Result: User remains on the login page with an error message.
+
+Test Case 5: Login with an empty username field.
+Expected Result: User remains on the login page with an error message.
+
+Test Case 6: Login with an empty password field.
+Expected Result: User remains on the login page with an error message.
+
+
+Appointment Booking Test Cases:
+
+Test Case 1: Book an appointment with all valid fields.
+Expected Result: Appointment is successfully booked, and confirmation is shown.
+
+Test Case 2: Attempt to book an appointment with an empty date field.
+Expected Result: Booking fails, and user remains on the appointment page.
+
+Test Case 3: Book an appointment with a different facility and healthcare program.
+Expected Result: Appointment is successfully booked with correct details in the confirmation.
+
+Test Case 4: Book an appointment with different valid data combinations.
+Expected Result: Appointment is successfully booked with correct details in the confirmation.
