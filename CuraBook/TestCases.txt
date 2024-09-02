@@ -1,34 +1,143 @@
 Login Test Cases:
 
-Test Case 1: Login with valid credentials.
+Test Case 1: Login with valid credentials
+
+Test Case ID: TC_LGN_001
+Test Name: Valid Login
+Description: Verify that a user can log in with correct username and password.
+Preconditions: User is registered and has valid login credentials.
+Test Steps:
+Open the login page.
+Enter a valid username.
+Enter the correct password.
+Click on the "Login" button.
 Expected Result: User is redirected to the appointment page.
+Actual Result: (To be filled after execution)
 
-Test Case 2: Login with an invalid username.
-Expected Result: User remains on the login page with an error message.
+Test Case 2: Login with an invalid username
 
-Test Case 3: Login with an invalid password.
-Expected Result: User remains on the login page with an error message.
+Test Case ID: TC_LGN_002
+Test Name: Invalid Username
+Description: Verify that a user cannot log in with an incorrect username.
+Preconditions: User is registered but attempts to log in with an incorrect username.
+Test Steps:
+Open the login page.
+Enter an invalid username.
+Enter the correct password.
+Click on the "Login" button.
+Expected Result: User remains on the login page with an error message "Invalid username or password."
+Actual Result: (To be filled after execution)
 
-Test Case 4: Login with empty fields.
-Expected Result: User remains on the login page with an error message.
+Test Case 3: Login with an invalid password
 
-Test Case 5: Login with an empty username field.
-Expected Result: User remains on the login page with an error message.
+Test Case ID: TC_LGN_003
+Test Name: Invalid Password
+Description: Verify that a user cannot log in with an incorrect password.
+Preconditions: User is registered but attempts to log in with an incorrect password.
+Test Steps:
+Open the login page.
+Enter a valid username.
+Enter an invalid password.
+Click on the "Login" button.
+Expected Result: User remains on the login page with an error message "Invalid username or password."
+Actual Result: (To be filled after execution)
 
-Test Case 6: Login with an empty password field.
-Expected Result: User remains on the login page with an error message.
+Test Case 4: Login with empty fields
+
+Test Case ID: TC_LGN_004
+Test Name: Empty Fields
+Description: Verify that login fails when both username and password fields are left empty.
+Preconditions: User attempts to log in without entering any credentials.
+Test Steps:
+Open the login page.
+Leave the username and password fields empty.
+Click on the "Login" button.
+Expected Result: User remains on the login page with an error message "Username and password are required."
+Actual Result: (To be filled after execution)
+
+Test Case 5: Login with an empty username field
+
+Test Case ID: TC_LGN_005
+Test Name: Empty Username Field
+Description: Verify that login fails when the username field is empty.
+Preconditions: User attempts to log in without entering a username.
+Test Steps:
+Open the login page.
+Leave the username field empty.
+Enter a valid password.
+Click on the "Login" button.
+Expected Result: User remains on the login page with an error message "Username is required."
+Actual Result: (To be filled after execution)
+
+Test Case 6: Login with an empty password field
+
+Test Case ID: TC_LGN_006
+Test Name: Empty Password Field
+Description: Verify that login fails when the password field is empty.
+Preconditions: User attempts to log in without entering a password.
+Test Steps:
+Open the login page.
+Enter a valid username.
+Leave the password field empty.
+Click on the "Login" button.
+Expected Result: User remains on the login page with an error message "Password is required."
+Actual Result: (To be filled after execution)
 
 
 Appointment Booking Test Cases:
 
-Test Case 1: Book an appointment with all valid fields.
-Expected Result: Appointment is successfully booked, and confirmation is shown.
+Test Case 1: Book an appointment with all valid fields
 
-Test Case 2: Attempt to book an appointment with an empty date field.
-Expected Result: Booking fails, and user remains on the appointment page.
+Test Case ID: TC_APP_001
+Test Name: Valid Appointment Booking
+Description: Verify that an appointment can be booked successfully with all fields filled correctly.
+Preconditions: User is logged in and on the appointment booking page.
+Test Steps:
+Select a valid date.
+Choose a facility from the dropdown.
+Select a healthcare program.
+Enter additional details if required.
+Click on the "Book Appointment" button.
+Expected Result: Appointment is successfully booked, and a confirmation message is shown.
+Actual Result: (To be filled after execution)
 
-Test Case 3: Book an appointment with a different facility and healthcare program.
+Test Case 2: Attempt to book an appointment with an empty date field
+
+Test Case ID: TC_APP_002
+Test Name: Empty Date Field
+Description: Verify that the appointment booking fails when the date field is left empty.
+Preconditions: User is logged in and on the appointment booking page.
+Test Steps:
+Leave the date field empty.
+Fill in the other required fields.
+Click on the "Book Appointment" button.
+Expected Result: Booking fails, and the user remains on the appointment page with an error message "Date is required."
+Actual Result: (To be filled after execution)
+
+Test Case 3: Book an appointment with a different facility and healthcare program
+
+Test Case ID: TC_APP_003
+Test Name: Booking with Different Facility and Program
+Description: Verify that an appointment can be booked successfully with different valid combinations of facilities and healthcare programs.
+Preconditions: User is logged in and on the appointment booking page.
+Test Steps:
+Select a valid date.
+Choose a different facility from the dropdown.
+Select a different healthcare program.
+Click on the "Book Appointment" button.
 Expected Result: Appointment is successfully booked with correct details in the confirmation.
+Actual Result: (To be filled after execution)
 
-Test Case 4: Book an appointment with different valid data combinations.
-Expected Result: Appointment is successfully booked with correct details in the confirmation.
+Test Case 4: Book an appointment with different valid data combinations
+
+Test Case ID: TC_APP_004
+Test Name: Booking with Various Data Combinations
+Description: Verify that an appointment can be booked successfully using various combinations of valid data.
+Preconditions: User is logged in and on the appointment booking page.
+Test Steps:
+Select different valid dates, facilities, and healthcare programs.
+Fill in the other required fields.
+Click on the "Book Appointment" button.
+Expected Result: Appointment is successfully booked with correct details in the confirmation for each combination.
+Actual Result: (To be filled after execution)
+These test cases are now more detailed and include all necessary components, such as IDs, test names, descriptions, preconditions, steps, and expected results. This structure makes them easier to follow and execute.
