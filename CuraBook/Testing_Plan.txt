@@ -1,0 +1,161 @@
+Testovací plán pro CURA Healthcare Service
+1. Úvod
+Tento testovací plán popisuje strategii a postupy pro testování webové aplikace CURA Healthcare Service. Cílem je ověřit funkčnost, výkon a bezpečnost aplikace, zajišťující, že splňuje stanovené požadavky a očekávání uživatelů.
+
+2. Cíle testování
+Ověřit správnost a spolehlivost funkcionalit aplikace, včetně přihlášení a rezervace schůzek.
+Zajistit, že aplikace funguje správně na různých zařízeních a prohlížečích.
+Identifikovat chyby a nedostatky v uživatelském rozhraní a funkcionalitách.
+Otestovat bezpečnostní aspekty aplikace, včetně ochrany osobních údajů a přístupových práv.
+3. Rozsah testování
+Funkční testování: Ověření, že všechny funkce aplikace fungují podle specifikací.
+Testování výkonu: Měření doby odezvy aplikace a její schopnosti zpracovat více uživatelů.
+Bezpečnostní testování: Identifikace bezpečnostních zranitelností a ochrany dat.
+Testování použitelnosti: Zajištění, že aplikace je uživatelsky přívětivá a intuitivní.
+Kompatibilní testování: Ověření funkčnosti aplikace na různých zařízeních a prohlížečích.
+4. Testovací strategie
+Automatizované testování: Použití nástrojů jako Selenium WebDriver a Pytest k automatizaci testovacích skriptů.
+Manuální testování: Ruční testování kritických scénářů a uživatelských toků.
+Regresní testování: Ověření, že nově implementované funkce neovlivnily stávající funkcionality.
+Testování výkonu: Měření odezvy aplikace při různých zátěžích.
+Testování bezpečnosti: Provádění testů penetračními nástroji a kontrola zabezpečení.
+5. Testovací prostředí
+Prohlížeče: Chrome, Firefox, Safari, Edge.
+Zařízení: Desktopové počítače, tablety, mobilní telefony.
+Operační systémy: Windows, macOS, Android, iOS.
+Testovací nástroje: Selenium WebDriver, Pytest, Allure Reporting.
+6. Testovací případy
+Testovací případ 1: Přihlášení s platnými (demo) údaji
+
+Popis: Ověření, že uživatel se správnými přihlašovacími údaji se úspěšně přihlásí.
+Předpoklady: Platné demo přihlašovací údaje.
+Kroky:
+Otevřít přihlašovací stránku.
+Zadání platných přihlašovacích údajů.
+Kliknutí na tlačítko "Přihlásit se".
+Očekávaný výsledek: Uživatel je přesměrován na domovskou stránku.
+Testovací případ 2: Přihlášení s neplatnými údaji
+
+Popis: Ověření, že uživatel s neplatnými přihlašovacími údaji se nemůže přihlásit.
+Předpoklady: Neplatné přihlašovací údaje.
+Kroky:
+Otevřít přihlašovací stránku.
+Zadání neplatných přihlašovacích údajů.
+Kliknutí na tlačítko "Přihlásit se".
+Očekávaný výsledek: Uživatel zůstává na přihlašovací stránce s chybovou zprávou.
+Testovací případ 3: Rezervace schůzky
+
+Popis: Ověření, že uživatel může úspěšně rezervovat schůzku.
+Předpoklady: Uživatel je přihlášen.
+Kroky:
+Otevřít stránku pro rezervaci schůzky.
+Vyplnit všechny povinné údaje.
+Kliknout na tlačítko "Rezervovat schůzku".
+Očekávaný výsledek: Schůzka je úspěšně rezervována a zobrazeno potvrzení.
+Testovací případ 4: Odhlášení
+
+Popis: Ověření, že uživatel se může úspěšně odhlásit.
+Předpoklady: Uživatel je přihlášen.
+Kroky:
+Kliknout na tlačítko "Odhlásit se".
+Očekávaný výsledek: Uživatel je přesměrován na hlavní stránku.
+7. Kritéria úspěchu
+Všechny funkční testy musí projít bez chyb.
+Výkon aplikace musí splňovat stanovené požadavky.
+Bezpečnostní testy musí odhalit a opravit všechny kritické zranitelnosti.
+Aplikace musí být plně kompatibilní s hlavními prohlížeči a zařízeními.
+Uživatelé musí mít pozitivní zkušenosti s používáním aplikace.
+8. Plán testování
+Příprava testovacího prostředí: [Datum]
+Vytvoření a konfigurace testovacích skriptů: [Datum]
+Provedení testování: [Datum - Datum]
+Vyhodnocení výsledků a reportování: [Datum]
+Dokončení a uzavření testování: [Datum]
+9. Zdroje a nástroje
+Testovací nástroje: Selenium WebDriver, Pytest, Allure
+Testovací dokumentace: Specifikace požadavků, testovací případy
+Komunikační kanály: [E-mail, Slack, atd.]
+10. Závěr
+Tento testovací plán je navržen tak, aby zajistil důkladné a efektivní testování aplikace CURA Healthcare Service. Cílem je identifikovat a odstranit chyby před uvedením aplikace do produkčního prostředí a zajistit, aby aplikace splňovala vysoké standardy kvality a spolehlivosti.
+
+
+EN:
+Test Plan for CURA Healthcare Service
+1. Introduction
+This test plan outlines the strategy and procedures for testing the CURA Healthcare Service web application. The goal is to verify functionality, performance, and security to ensure the application meets the specified requirements and user expectations.
+
+2. Testing Objectives
+Verify the correctness and reliability of application functionalities, including login and appointment booking.
+Ensure the application performs well across different devices and browsers.
+Identify any issues or shortcomings in the user interface and functionality.
+Test the security aspects of the application, including data protection and access controls.
+3. Scope of Testing
+Functional Testing: Verify that all application features work as specified.
+Performance Testing: Measure the application's response time and its ability to handle multiple users.
+Security Testing: Identify security vulnerabilities and ensure data protection.
+Usability Testing: Ensure the application is user-friendly and intuitive.
+Compatibility Testing: Verify the application's functionality across different devices and browsers.
+4. Testing Strategy
+Automated Testing: Use tools like Selenium WebDriver and Pytest to automate test scripts.
+Manual Testing: Perform manual testing for critical scenarios and user flows.
+Regression Testing: Verify that new features or bug fixes have not affected existing functionality.
+Performance Testing: Measure application response times under various loads.
+Security Testing: Conduct penetration testing and review code for security risks.
+5. Test Environment
+Browsers: Chrome, Firefox, Safari, Edge.
+Devices: Desktops, tablets, mobile phones.
+Operating Systems: Windows, macOS, Android, iOS.
+Testing Tools: Selenium WebDriver, Pytest, Allure Reporting.
+6. Test Cases
+Test Case 1: Login with Valid (Demo) Credentials
+
+Description: Verify that a user with valid login credentials can successfully log in.
+Preconditions: Valid demo login credentials.
+Steps:
+Open the login page.
+Enter valid login credentials.
+Click the "Login" button.
+Expected Result: User is redirected to the home page.
+Test Case 2: Login with Invalid Credentials
+
+Description: Verify that a user with invalid login credentials cannot log in.
+Preconditions: Invalid login credentials.
+Steps:
+Open the login page.
+Enter invalid login credentials.
+Click the "Login" button.
+Expected Result: User remains on the login page with an error message.
+Test Case 3: Appointment Booking
+
+Description: Verify that a user can successfully book an appointment.
+Preconditions: User is logged in.
+Steps:
+Open the appointment booking page.
+Fill in all required fields.
+Click the "Book Appointment" button.
+Expected Result: Appointment is successfully booked, and a confirmation is displayed.
+Test Case 4: Logout
+
+Description: Verify that a user can successfully log out.
+Preconditions: User is logged in.
+Steps:
+Click the "Logout" button.
+Expected Result: User is redirected to the landing page.
+7. Success Criteria
+All functional tests must pass without errors.
+The application’s performance must meet the defined requirements.
+Security tests must identify and address all critical vulnerabilities.
+The application must be fully compatible with major browsers and devices.
+Users must have a positive experience using the application.
+8. Testing Schedule
+Test Environment Setup: [Date]
+Test Script Creation and Configuration: [Date]
+Testing Execution: [Date - Date]
+Results Evaluation and Reporting: [Date]
+Completion and Closure of Testing: [Date]
+9. Resources and Tools
+Testing Tools: Selenium WebDriver, Pytest, Allure
+Test Documentation: Requirements specifications, test cases
+Communication Channels: [Email, Slack, etc.]
+10. Conclusion
+This test plan is designed to ensure thorough and effective testing of the CURA Healthcare Service application. The goal is to identify and fix issues before the application is deployed to the production environment, ensuring it meets high standards of quality and reliability.
